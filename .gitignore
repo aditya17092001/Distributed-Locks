@@ -98,8 +98,8 @@ $RECYCLE.BIN/
 *.yaml
 *.yml
 # (optional) uncomment if you keep secrets in YAML
-# application.yml
-# application.properties
+application.yml
+application.properties
 
 # ---------------------------------------
 # 🧰 Testing / Coverage
