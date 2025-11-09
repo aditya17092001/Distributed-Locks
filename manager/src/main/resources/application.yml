@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      timeout: 3s
+      lettuce:
+        pool:
+          max-active: 8
+          max-idle: 8
+          min-idle: 0
+
+  application:
+    name: distributed-lock-manager
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["health", "metrics", "prometheus"]
+
+  metrics:
+    tags:
+      application: distributed-lock-manager
