@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import com.lockmanager.dto.AcquireRequest;
 import com.lockmanager.dto.AcquireResponse;
 import com.lockmanager.dto.ReleaseRequest;
+import com.lockmanager.dto.RenewRequest;
 import com.lockmanager.service.LockService;
 
 
@@ -38,8 +39,8 @@ public class LockController {
 	
 	
 	@PostMapping("/renew")
-	public ResponseEntity<?> renew(@RequestParam String resource, @RequestParam String owner, @RequestParam String token, @RequestParam long ttlMs) {
-			var res = lockService.renew(resource, owner, token, ttlMs);
+	public ResponseEntity<?> renew(@RequestBody @Valid RenewRequest req) {
+			var res = lockService.renew(req.resource(), req.owner(), req.token(), req.ttlMs());
 			return ResponseEntity.ok(res);
 	}
 	

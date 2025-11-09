@@ -1,0 +1,162 @@
+# ---------------------------------------
+# 🧠 Core Build Outputs
+# ---------------------------------------
+/target/
+/build/
+/out/
+/bin/
+/dist/
+/classes/
+/logs/
+/tmp/
+/*.log
+
+# ---------------------------------------
+# ☕ Java & JVM
+# ---------------------------------------
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.iws
+*.ipr
+hs_err_pid*
+replay_pid*
+
+# ---------------------------------------
+# ⚙️ Maven & Gradle
+# ---------------------------------------
+.mvn/
+.settings/
+.classpath
+.project
+.gradle/
+.gradle-cache/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# ---------------------------------------
+# 🧩 IntelliJ IDEA
+# ---------------------------------------
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea_modules/
+out/
+
+# ---------------------------------------
+# 💡 Eclipse
+# ---------------------------------------
+.metadata/
+.settings/
+*.launch
+*.classpath
+*.project
+.recommenders/
+
+# ---------------------------------------
+# 🧱 VS Code
+# ---------------------------------------
+.vscode/
+.history/
+.code-workspace
+
+# ---------------------------------------
+# 🧰 OS / Editor Junk
+# ---------------------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.swp
+*.swo
+*~
+
+# ---------------------------------------
+# 🔒 Environment / Secrets
+# ---------------------------------------
+.env
+.env.*
+*.env
+.envrc
+*.pem
+*.crt
+*.key
+*.keystore
+*.p12
+*.jks
+*.cer
+*.csr
+*.der
+*.conf
+*.cfg
+*.yaml
+*.yml
+# (optional) uncomment if you keep secrets in YAML
+# application.yml
+# application.properties
+
+# ---------------------------------------
+# 🧰 Testing / Coverage
+# ---------------------------------------
+.testcontainers/
+.test/
+.coverage/
+*.coverage
+jacoco.exec
+site/
+surefire-reports/
+failsafe-reports/
+
+# ---------------------------------------
+# 🧠 OS-specific
+# ---------------------------------------
+# macOS
+.AppleDouble
+.LSOverride
+Icon?
+__MACOSX/
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ---------------------------------------
+# ☁️ Docker / Compose / Cloud
+# ---------------------------------------
+docker-compose.override.yml
+docker-compose.local.yml
+.dockerignore
+*.pid
+
+# ---------------------------------------
+# 🧪 IDE Tools
+# ---------------------------------------
+.idea_modules/
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+
+# ---------------------------------------
+# 🧩 Redis / Cache / Runtime
+# ---------------------------------------
+*.rdb
+*.aof
+dump.rdb
+appendonly.aof
+
+# ---------------------------------------
+# 🚀 Misc (Optional)
+# ---------------------------------------
+*.bak
+*.tmp
+*.orig
+*.rej
+*.merge
+*.patch
+*.un~
