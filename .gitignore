@@ -96,7 +96,7 @@ $RECYCLE.BIN/
 *.conf
 *.cfg
 *.yaml
-*.yml
+#*.yml
 # (optional) uncomment if you keep secrets in YAML
 application.yml
 application.properties
